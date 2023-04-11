@@ -17,8 +17,10 @@ eureka:
           user.name: ${security.user.name}
           user.password: ${security.user.password}
   client:
-      service-url:
-        defaultZone: http://localhost:7001/eureka/
+    register-with-eureka: false # 不注册自己
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
   boot:
     admin:
       routes:

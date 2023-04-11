@@ -19,6 +19,7 @@ public class CommentService {
     @Autowired
     private CommentMapper commentMapper;
 
+    @Qualifier("userFeignClientFallback")
     @Autowired
     private UserFeignClient userFeignClient;
 
