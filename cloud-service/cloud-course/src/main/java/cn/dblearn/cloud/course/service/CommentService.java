@@ -4,6 +4,7 @@ import cn.dblearn.cloud.course.dao.CommentMapper;
 import cn.dblearn.cloud.course.entity.Comment;
 import cn.dblearn.cloud.course.feign.UserFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
